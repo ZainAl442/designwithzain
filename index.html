@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000; /* Set the default text color */
+  position: relative;
+}
+
+.menu li a:hover {
+  color: #000; /* Set the text color when hovering */
+}
+
+.menu li a:hover:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000; /* Set the underline color */
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#">Item 1</a></li>
+    <li><a href="#">Item 2</a></li>
+    <li><a href="#">Item 3</a></li>
+  </ul>
+  
+</body>
+</html>
